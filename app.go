@@ -52,6 +52,7 @@ func (a *App) getProduct(w http.ResponseWriter, r *http.Request) {
 		default:
 			respondWithError(w, http.StatusInternalServerError, err.Error())
 		}
+		return
 	}
 
 	respondWithJSON(w, http.StatusOK, p)
