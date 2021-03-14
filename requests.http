@@ -1,0 +1,26 @@
+POST http://localhost:8081/product
+Content-Type: application/json
+
+{
+  "name": "ham",
+  "price": 11.50
+}
+
+###
+GET http://localhost:8081/products
+Accept: application/json
+
+###
+GET http://localhost:8081/product/1
+
+###
+PUT http://localhost:8081/product/1
+Content-Type: application/json
+
+{
+  "name": "ham",
+  "price": 12.50
+}
+
+###
+DELETE http://localhost:8081/product/1
